@@ -54,5 +54,12 @@ def main():
 
     lion = WildAnimal("Lion", 8, "Rawr")
     print(lion)
-    
+
+    print()
+
+    animals = [dog, animal, max, lion]
+
+    for animal in animals:
+        print(animal)  # Same code, different behavbior
+
 main()

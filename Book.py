@@ -3,6 +3,9 @@
 # Book class Demo OOP
 # Library System
 
+from typing import Any
+
+
 class Book:
     def __init__(self, title : str, checked_out : bool = False):
         self.title = title
@@ -14,7 +17,7 @@ class Book:
     def return_book(self):
         self.checked_out = False
 
-    def __eq__(self, other: object) -> bool:
+    def __eq__(self, other: Any) -> bool:
         # We get to define how two Books are compared for equality.
         return self.title == other.title
 
